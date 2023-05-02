@@ -32,7 +32,7 @@ similarity = pickle.load(open('similarity.pkl', 'rb'))
 st.title('Movie Recommending System')
 
 selected_movie_name = st.selectbox(
-    'How would you like to be contacted?',
+    'Enter the name of the movie on the basis of which similar movies will be recommended to you : ',
     movies['title'].values)
 
 if st.button('Recommend'):
